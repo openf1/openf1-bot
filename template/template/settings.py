@@ -8,10 +8,10 @@
 
 import sys
 import os
+
 from os.path import dirname
 path = dirname(dirname(os.path.abspath(os.path.dirname(__file__))))
 sys.path.append(path)
-from misc.log import *
 
 BOT_NAME = 'openf1-bot.template'
 
@@ -22,15 +22,11 @@ NEWSPIDER_MODULE = 'template.spiders'
 #USER_AGENT = 'template (+http://www.yourdomain.com)'
 
 DOWNLOADER_MIDDLEWARES = {
-   # 'misc.middleware.CustomHttpProxyMiddleware': 400,
-    'misc.middleware.CustomUserAgentMiddleware': 401,
 }
 
 ITEM_PIPELINES = {
-    'template.pipelines.JsonWithEncodingPipeline': 300,
-    #'template.pipelines.RedisPipeline': 301,
 }
 
-LOG_LEVEL = 'INFO'
+LOG_LEVEL = 'ERROR'
 
 DOWNLOAD_DELAY = 1

@@ -7,7 +7,9 @@ Web crawler software used by openf1, which collects documents from the web to bu
 
 ## Usage
 
-Run `./startproject.sh <PROJECT>` to start a new project. Then, modify:
+Run `./startproject.sh <PROJECT>` to start a new project.
 
-    * PROJECT/PROJECT/items.py
-    * PROJECT/PROJECT/spider/spider.py
+Then, modify:
+
+* PROJECT/PROJECT/items.py
+* PROJECT/PROJECT/spiders/spider.py
