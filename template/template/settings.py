@@ -13,7 +13,7 @@ path = dirname(dirname(os.path.abspath(os.path.dirname(__file__))))
 sys.path.append(path)
 from misc.log import *
 
-BOT_NAME = 'template'
+BOT_NAME = 'openf1-bot.template'
 
 SPIDER_MODULES = ['template.spiders']
 NEWSPIDER_MODULE = 'template.spiders'

@@ -10,7 +10,7 @@ if [ -z "$1" ]; then
     exit
 fi
 
-echo "Starting new project $1."
+echo "Starting new project $1..."
 
 cp -r template $1
 if [ "$(uname)" == "Darwin" ]; then
