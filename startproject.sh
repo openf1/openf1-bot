@@ -10,7 +10,7 @@ if [ -z "$1" ]; then
     exit
 fi
 
-echo "Starting project $1."
+echo "Starting new project $1."
 
 cp -r template $1
 if [ "$(uname)" == "Darwin" ]; then
@@ -23,4 +23,4 @@ elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
 fi
 mv $1/template $1/$1
 
-echo "Create $1 succeed!"
+echo "Project $1 created!"
